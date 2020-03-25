@@ -1,0 +1,79 @@
+.img_bg
+    height: 280px
+    width: 100%
+    background: #EDF2F5
+    margin-bottom: 35px
+
+.header__text
+    text-align: center
+    font-family: Lato
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 26px
+    text-align: center
+    color: #1B357D
+    max-width: 94%
+    padding-bottom: 45px
+    margin: 0 auto
+
+.header__mobil_filter
+    
+    align-items: center
+    background: #EDF2F5
+    border: 1px solid #D7DEE9
+    box-sizing: border-box
+    width: 100%
+    text-align-last: left
+    height: 40px
+    display: flex
+    justify-content: space-between
+    border: none
+.filter_mobil
+    font-family: Lato
+    font-style: normal
+    font-weight: 500
+    font-size: 15px
+    line-height: 18px
+    color: #1B357D
+    margin-left: 15px
+.header__mobil_filter img 
+    margin-right: 15px
+
+@media screen and ( max-width: 769px )
+    .wine__map_filter
+        top: 0px !important
+
+    .header__mobil_active
+        right: 0 !important
+        top: 0px !important
+        transition 500ms
+
+    .img_bg
+        margin-bottom: 0
+        background: #ffffff
+    .header__mobil_filter
+        margin-bottom: 20px
+    .header__text
+        padding-bottom: 30px
+        text-align: left
+
+@media screen and ( max-width: 425px )
+    .wine__map_filter, 
+    .header__mobil_active   
+        top: 0px !important
+    .img_bg
+        height: 200px
+    .header__text
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 20px
+        color: #1B357D
+@media screen and ( max-width: 320px )
+    .wine__map_filter,
+    .header__mobil_active   
+        top: 0px !important
+    .img_bg
+        height: 150px

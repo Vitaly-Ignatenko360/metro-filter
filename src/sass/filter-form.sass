@@ -1,0 +1,111 @@
+.filter__form
+    display: flex
+    flex-direction: column
+
+.wine__map_filter
+    background: #EDF2F5
+    padding: 0 15px
+    height: 103%
+    
+    min-width: 215px
+.filter__wine_head
+    margin-top: 11px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-bottom: 18px
+
+.filter__wine_h1
+    font-family: Lato
+    font-style: normal
+    font-weight: normal
+    font-size: 24px
+    line-height: 29px
+    color: #313131
+.filter__default_btn
+    font-family: Lato
+    font-style: normal
+    font-weight: normal
+    font-size: 10px
+    line-height: 12px
+    color: rgba(27, 53, 125, 0.6)
+    border: none
+    background: #EDF2F5
+
+.filter__select
+    display: flex
+    flex-direction: column
+    padding-bottom: 10px
+
+.filter__select select
+    border: 1px solid rgba(27, 53, 125, 0.3)
+    box-sizing: border-box
+    margin-bottom: 10px
+    height: 40px
+    position: relative
+    padding-left: 10px
+    -webkit-appearance: none
+    -moz-appearance: none
+    -ms-appearance: none
+    appearance: none
+    background: #FFFFFF url('../img/path-img.png') no-repeat right center
+    outline: 0
+    background-position-x: 97%
+    background-position-y: 50%
+
+.filter__form_btn
+    height: 50px
+    font-family: Lato
+    font-style: normal
+    font-weight: 500
+    font-size: 16px
+    line-height: 19px
+    text-align: center
+    text-transform: uppercase
+    color: #1B357D
+    background: #FBEB00
+    margin-bottom: 30px
+    border: none
+
+@media screen and ( min-width: 769px )
+    .header__mobil_filter
+        display: none
+@media screen and ( max-width: 769px  )
+    .header__mobil_filter
+        outline: none
+    .filter__default_btn
+        font-size: 12px
+        line-height: 14px
+    .filter__form_btn    
+        margin-bottom: 5px
+    .wine__map_filter
+        position: fixed
+        top: 0px
+        right: 100%
+        width: 100%
+        box-sizing: border-box
+        transition: 500ms
+        z-index: 3
+    .filter__wine
+        display: flex
+        flex-direction: column
+
+    .filter__form
+        order: 1
+    .filter__wine_head
+        order: 2
+        justify-content: center
+
+    .filter__wine_h1
+        display: none
+
+@media screen and ( max-width: 520px  )
+    .box__bg_price  
+        margin-right: 23%
+        min-width: 100px
+        max-width: 100px
+    .filter__select select
+        background-position-x: 97%
+@media screen and ( max-width: 376px )
+    .box__bg_price
+        margin: 0 auto !important
